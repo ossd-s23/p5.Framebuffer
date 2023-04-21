@@ -77,6 +77,7 @@ BlurRenderer.frag = `
 precision highp float;
 varying highp vec2 vVertTexCoord;
 
+uniform int uDirection;
 uniform sampler2D uImg;
 uniform sampler2D uDepth;
 uniform vec2 uSize;
