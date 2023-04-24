@@ -8,6 +8,15 @@ var targetZ = 0
 
 let x = 0;
 
+function preload() {
+  img = loadImage('modern_vampires_of_the_city.png');
+}
+function setup() {
+  // Top-left corner of the img is at (0, 0)
+  // Width and height are the img's original width and height
+  image(img, 0, 0);
+}
+
 function setup() {
   createCanvas(1000, 500, WEBGL);
   pixelDensity(2);
@@ -68,8 +77,8 @@ function draw() {
     torus(70, 10);
     pop()
 
-    push()
-    fill('#72FA00')
+    push(),.,
+    fill('#72FA00'),
     translate(75, 45, z);
     rotateZ(frameCount * 0.01);
     rotateX(frameCount * 0.01);
